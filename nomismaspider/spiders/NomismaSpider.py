@@ -23,9 +23,6 @@ class NomismaSpider(scrapy.Spider):
         coin_type = response.css('#object_title::text').extract_first()
         authority = response.css('.metadata_section a[href*=authority]::text').extract_first()
 
-        if(authority == 'Clodius Macer'):
-            quit('Clodius Macer')
-
         for example in response.css("#examples .g_doc"):
 
             name = example.css('.result_link a::text').extract_first()
