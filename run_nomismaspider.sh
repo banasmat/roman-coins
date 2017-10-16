@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm nomismaspider-output.json
 touch nomismaspider-output.json
 
